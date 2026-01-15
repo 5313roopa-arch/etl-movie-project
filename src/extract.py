@@ -5,7 +5,7 @@ from typing import Dict
 
 import pandas as pd
 
-from .config import LINKS_CSV, MOVIES_CSV, RATINGS_CSV
+from src.config import LINKS_CSV, MOVIES_CSV, RATINGS_CSV
 
 logger = logging.getLogger(__name__)
 

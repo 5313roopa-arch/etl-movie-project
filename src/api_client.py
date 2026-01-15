@@ -6,7 +6,7 @@ from typing import Any, Dict, Iterable, Optional
 
 import requests
 
-from .config import API_CACHE_FILE, API_MAX_RETRIES, API_RATE_LIMIT_DELAY, OMDB_BASE_URL, OMDB_API_KEY
+from src.config import API_CACHE_FILE, API_MAX_RETRIES, API_RATE_LIMIT_DELAY, OMDB_BASE_URL, OMDB_API_KEY
 
 logger = logging.getLogger(__name__)
 

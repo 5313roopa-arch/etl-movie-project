@@ -12,7 +12,7 @@ ORDER BY average_rating DESC
 LIMIT 1;
 
 -- Query 2: Top 5 genres by average rating
-SELECT
+SELECTcd
     g.genreName,
     ROUND(AVG(r.rating), 2) AS average_rating
 FROM genres g

@@ -4,8 +4,8 @@ from typing import Iterable, List, Tuple
 
 import pandas as pd
 
-from .database import transaction
-from .config import BATCH_SIZE
+from src.database import transaction
+from src.config import BATCH_SIZE
 
 logger = logging.getLogger(__name__)
 

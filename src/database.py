@@ -3,7 +3,7 @@ from contextlib import contextmanager
 from pathlib import Path
 from typing import Iterator
 
-from .config import DATABASE_PATH
+from src.config import DATABASE_PATH
 
 
 def ensure_database_directory() -> None:

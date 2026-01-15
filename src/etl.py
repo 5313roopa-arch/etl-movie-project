@@ -1,31 +1,34 @@
 import argparse
 import logging
+import os
 import sys
 from time import perf_counter
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+
 from tqdm import tqdm
 
-from .api_client import OMDbClient
-from .config import (
+from src.api_client import OMDbClient
+from src.config import (
     API_CACHE_FILE,
     LOG_FILE,
     OMDB_API_KEY,
     TEST_MODE_LIMIT,
 )
-from .database import (
+from src.database import (
     create_schema,
     drop_database,
     get_connection,
 )
-from .extract import extract_csv_data
-from .load import (
+from src.extract import extract_csv_data
+from src.load import (
     insert_genres,
     insert_movie_details,
     insert_movie_genres,
     insert_movies,
     insert_ratings,
 )
-from .transform import transform_data
+from src.transform import transform_data
 
 logger = logging.getLogger(__name__)
 
